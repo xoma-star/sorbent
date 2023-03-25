@@ -1,15 +1,30 @@
 import React from 'react';
-import Title from "../shared/Title";
-import Logo from "../shared/Logo";
+import Button from "../shared/Button";
+import Text from "../shared/Text";
+import useScroll from "../hooks/useScroll";
+import {Link} from 'react-scroll'
+
+
+const menu = [
+    {name: 'Применение', label: 'usage'},
+    {name: 'Преимущества', label: 'advantages'},
+    {name: 'Характеристики', label: 'characteristics'}
+]
 
 const Header = () => {
+    const scrollDirection = useScroll()
     return (
-        <header className={'flex flex-row border-l-2 ml-6 sm:ml-24 py-12 border-red-400 justify-between pr-12 items-center flex-wrap gap-6'}>
-            <div className={'flex flex-row gap-6 items-center flex-wrap'}>
-                <Logo width={120} height={40}/>
-                <Title size={'m'}>Производство нефтесорбентов</Title>
-            </div>
-            <Title size={'m'}><a href={'tel:+79991318461'}>+7 999 131 84 61</a></Title>
+        <header className={
+            `sm:flex flex-row justify-end items-center flex-wrap gap-6 fixed top-0 left-0 z-10 px-4 py-8 w-full text-white bg-black duration-100 hidden`
+        }
+        style={{transform: scrollDirection === 'up' ? 'translateY(0)' : 'translateY(-120px)'}}
+        >
+            {menu.map(x => <Link to={x.label} smooth={true} key={x.name + 'menu'}>
+                <Text className={'sm:hover:underline cursor-pointer'}>
+                    {x.name}
+                </Text>
+            </Link>)}
+            <Button onClick={() => window.open('tel:+7 999 131 84 61', '_self')}>+7 999 131 84 61</Button>
         </header>
     );
 };
