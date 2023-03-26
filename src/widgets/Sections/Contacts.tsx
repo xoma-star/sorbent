@@ -8,7 +8,7 @@ const Contacts = () => {
     return (
         <div className={'flex flex-col items-center justify-center py-16 gap-4 px-8'}>
             <Title>Контакты</Title>
-            <div className={'invert-[1] flex flex-row gap-2 flex-wrap'}>
+            <div className={'invert-[1] flex flex-row gap-2 flex-wrap justify-center'}>
                 <Button onClick={() => window.open('tel:+7 999 131 84 61', '_self')}>+7 999 131 84 61</Button>
                 <Button onClick={() => window.open('mailto:aboba@mail.ru', '_self')}>aboba@mail.ru</Button>
             </div>

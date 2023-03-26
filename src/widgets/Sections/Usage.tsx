@@ -10,12 +10,13 @@ import oilPlatform from '../../shared/images/oil-platform.svg'
 import oilPump from '../../shared/images/oil-pump.svg'
 import port from '../../shared/images/port.svg'
 import refinery from '../../shared/images/refinery.svg'
+import checkmark from '../../shared/images/checkmark.svg'
 
 const usages = [
     {name: 'Нефтеперерабатывающие производства', logo: oilPump},
     {name: 'Промышленные предприятия', logo: factory},
     {name: 'Транспортные компании', logo: liftTruck},
-    {name: 'Заводы по очистке нефти', logo: refinery},
+    {name: 'Предприятия по очистке нефти', logo: refinery},
     {name: 'Компании по добыче жидких углеводородов', logo: chemistry},
     {name: 'Морские гавани и причалы', logo: port},
     {name: 'Нефтяные платформы', logo: oilPlatform}
@@ -23,17 +24,17 @@ const usages = [
 
 const Usage = () => {
     return (
-        <div className={'py-16'} id={'usage'}>
-            <div className={'lg:px-80 px-12'}>
+        <div className={'py-16 lg:px-40 xl:px-80 px-12'} id={'usage'}>
+            <div>
                 <Title>Где используется?</Title>
                 <Text className={'mt-6'} size={'l'}>
                     ЭКОСОРБ является экологичным природным нефтесорбентом изготовленным из отхода сахарной промышленности
                     и обладает высокой сорбционной емкостью по отношению к нефтепродуктам.
                 </Text>
             </div>
-            <div className={'grid lg:grid-cols-3 grid-cols-1 gap-8 lg:px-80 px-12 py-16'} style={{wordBreak: 'break-word'}}>
+            <div className={'grid lg:grid-cols-3 grid-cols-1 gap-8 py-16'} style={{wordBreak: 'break-word'}}>
                 {usages.map(x => <div key={x.name + 'gasd'} className={'flex flex-row items-center gap-2'}>
-                    <img src={x.logo} alt={x.name}/>
+                    <img src={checkmark} alt={x.name}/>
                     <span>{x.name}</span>
                 </div>)}
             </div>
