@@ -39,9 +39,11 @@ const Usage = () => {
                 </div>)}
             </div>
             <div className={'w-full py-4 text-center'}>
-                <Button className={'invert-[1]'}>
-                    Скачать презентацию
-                </Button>
+               <a href={'/presentation ECOSORB.pptx'} download={'презентация.pptx'}>
+                   <Button className={'invert-[1]'}>
+                       Скачать презентацию
+                   </Button>
+               </a>
             </div>
         </div>
     );
