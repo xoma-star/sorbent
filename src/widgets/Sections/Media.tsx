@@ -60,7 +60,7 @@ const Media = () => {
                     <div className={'lg:w-[60%] flex flex-col text-left justify-between gap-8'}>
                         <Text className={'font-bold'} size={'l'}>{x.source}</Text>
                         <Text>{x.text}</Text>
-                        <a href={x.link}>Читать в источнике</a>
+                        <a className={'underline'} href={x.link}>Читать в источнике</a>
                     </div>
                 </div>)}
             </div>
