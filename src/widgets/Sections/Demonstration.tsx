@@ -11,10 +11,6 @@ const Demonstration = () => {
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen/>
-            <Text className={'sm:w-[60%]'}>Для примера показан процесс впитывания отработанного машинного масла.
-                Сорбент впитывает любые нефтепродукты, является органическим, способен к биоразложению, легко утилизируется термически.
-                Тесты проведены в Санкт-Петербургском государственном университете промышленных технологий и дизайна.
-            </Text>
         </div>
     );
 };
