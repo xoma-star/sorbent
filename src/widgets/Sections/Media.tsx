@@ -6,6 +6,8 @@ import rg from './media/rg.jpg'
 import nr from './media/nr.jpeg'
 import nl from './media/nl.jpg'
 import e from './media/e+.jpg'
+import uc from './media/ufacity.jpg';
+import prb from './media/prb.jpg';
 import Text from "../../shared/Text";
 
 const links = [
@@ -44,6 +46,18 @@ const links = [
         source: 'Российская газета',
         text: 'В Уфе придумали, как с помощью свеклы очистить воду от нефтепродуктов ',
         pic: rg
+    },
+    {
+        link: 'https://ufacitynews.ru/news/2023/10/22/uchenye-iz-ufy-uluchshili-svoj-sorbent-dlya-ochistki-vody-ot-nefti/',
+        source: 'UfacityNews.ru',
+        text: 'Ученые из Уфы улучшили свой сорбент для очистки воды от нефти',
+        pic: uc
+    },
+    {
+        link: 'https://pravitelstvorb.ru/news/22072/',
+        source: 'Правительство РБ',
+        text: 'Студентка УУНиТ стала единственным в Башкирии получателем стипендии имени В.И.Вернадского',
+        pic: prb
     }
 ]
 
