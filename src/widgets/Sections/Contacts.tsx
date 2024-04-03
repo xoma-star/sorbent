@@ -12,7 +12,9 @@ const Contacts = () => {
                 <a href={'tel:+7 999 131 84 61'}><Button>+7 999 131 84 61</Button></a>
                 <a href={'mailto:infoecosorb@mail.ru'}><Button>infoecosorb@mail.ru</Button></a>
             </div>
-            <Text size={'s'} className={'mt-16 opacity-75'}>Проект выполнен при поддержке «Фонда содействия инновациям» в рамках федерального проекта «Платформа университетского технологического предпринимательства»</Text>
+            <Text size={'s'} className={'mt-16 opacity-75 max-w-[600px] text-center'}>
+              Проект выполнен при поддержке «Фонда содействия инновациям» в рамках федерального проекта «Платформа университетского технологического предпринимательства»
+            </Text>
             <a href={'https://www.fasie.ru/'} target={'_blank'}><img src={logo} alt={'ФСИ'}/></a>
         </div>
     );
